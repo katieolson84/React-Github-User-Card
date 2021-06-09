@@ -61,8 +61,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <p>GitHub User Cards</p>
+        <div>
+          <h1 className="app-header">GitHub User Cards</h1>
         </div>
         <div className="form-container">
           <form onSubmit={this.onSubmit}>

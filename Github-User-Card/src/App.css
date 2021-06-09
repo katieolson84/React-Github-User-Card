@@ -1,21 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: linear-gradient(120deg, #f8dde2, #f19aa5);
-  /* color: white; */
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
 
-p{
-  font-size: 4rem;
+.app-header {
+  font-size: 2.8rem;
 }
 
-p, form{
+form,
+h1 {
   color: white;
   text-align: center;
   min-height: 11vh;
@@ -24,24 +24,27 @@ p, form{
   align-items: center;
 }
 
-form input, form button{
+form input,
+form button {
   padding: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: none;
   background: white;
-  
 }
-form input{
-  color:rgb(73, 73, 73);
+form input {
+  color: rgb(73, 73, 73);
 }
-form input::placeholder{
-  color:#b1adad;
+form input::placeholder {
+  color: #b1adad;
 }
-form button{
+form button {
   color: white;
-  background: #f19aa5;;
+  background: #f19aa5;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+button.btn.btn-link:focus {
+  box-shadow: none;
 }
 
 form button:hover {
@@ -49,74 +52,97 @@ form button:hover {
   color: #f19aa5;
 }
 
-.App{
+.App {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.github-user{
+
+.github-user {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 40%;
   text-align: center;
   background-color: #f8dde2;
   padding: 1rem;
   box-shadow: 5px 5px 10px rgb(192, 84, 108);
   margin-bottom: 1rem;
 }
-.card-container{
+.card-container {
   margin: 0;
   background-color: white;
-  width: 40vw;
+  width: 100%;
 }
-.card-header{
-  background-color:white;
-  
+.card-header {
+  background-color: white;
 }
-.user-img img{
+.user-img img {
   border-radius: 50%;
 }
-.user-details{
+.user-details {
   color: rgb(73, 73, 73);
 }
 
-.user-details h2{
+.user-details h2 {
   font-size: 2.8rem;
   padding: 1rem;
 }
 
-.user-details h3{
+.user-details h3 {
   font-size: 1.4rem;
   color: rgb(124, 122, 122);
 }
-.user-details h4{
+.user-details h4 {
   font-size: 1.4rem;
-  color:rgb(124, 122, 122);
+  color: rgb(124, 122, 122);
 }
 
-.fa-angle-double-down{
-  color:rgb(192, 84, 108);
-  font-size: 2rem;;
+.fa-angle-double-down {
+  color: rgb(192, 84, 108);
+  font-size: 2rem;
+  border: none;
 }
 
-.followers-container{
+.followers-container {
   display: flex;
   flex-direction: column;
 }
 
-.follower-details{
+.follower-details {
   display: flex;
   align-items: center;
   margin-left: 1rem;
 }
-.follower-photo{
+.follower-photo {
   border-radius: 50%;
 }
-.follower-username{
+.follower-username {
   font-size: 1.2rem;
   padding: 1rem;
   text-align: left;
-  color:rgb(124, 122, 122);
+  color: rgb(124, 122, 122);
+}
+
+@media (max-width: 1300px) {
+  .github-user {
+    width: 75%;
+  }
+  .card-container {
+    width: 100%;
+    justify-self: center;
+  }
+  .user-details h2 {
+    font-size: 2rem;
+  }
+  .user-details h3 {
+    font-size: 1.2rem;
+  }
+  .user-details h4 {
+    font-size: 1.2rem;
+  }
+  .follower-username {
+    font-size: 1rem;
+  }
 }
