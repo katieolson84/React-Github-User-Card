@@ -2,4 +2,4 @@
 
 Fetches data from the Github API, https://api.github.com/users/,  for a Github user and displays their followers. 
 
-Built using: React, Styled Components
+Built using: React, CSS, Axios, & React-Bootstrap
